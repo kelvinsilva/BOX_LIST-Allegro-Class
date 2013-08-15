@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1376365173 source:d:\code\ogm_game\ogm_game_code\ogm_game_code_2\box_test\box_list.cpp
+	<allegro.h>
+	<winalleg.h>
+	<vector>
+	<string>
+	"CUSTOM_FUNCTIONS_HEADER.h"
+
+1376365147 d:\code\ogm_game\ogm_game_code\ogm_game_code_2\box_test\box_list_h.h
+
+1376347031 d:\code\ogm_game\ogm_game_code\ogm_game_code_2\box_test\custom_functions_header.h
+	<allegro.h>
+	<winalleg.h>
+	<iostream>
+	<stdlib.h>
+	<string>
+	<shlwapi.h>
+	<vector>
+
+1376347457 source:d:\code\ogm_game\ogm_game_code\ogm_game_code_2\box_test\custom_functions.cpp
+	"CUSTOM_FUNCTIONS_HEADER.h"
+
+1376594207 source:d:\code\ogm_game\ogm_game_code\ogm_game_code_2\box_test\main.cpp
+	"CUSTOM_FUNCTIONS_HEADER.h"
+	"BOX_LIST_CLASS.hpp"
+
+1376593907 d:\code\ogm_game\ogm_game_code\ogm_game_code_2\box_test\box_list_class.hpp
+	<allegro.h>
+	<winalleg.h>
+	<vector>
+	<string>
+	"CUSTOM_FUNCTIONS_HEADER.h"
+
