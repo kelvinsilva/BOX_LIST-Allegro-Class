@@ -150,9 +150,11 @@ BOX_LIST<Type1, Type2>::BOX_LIST(int x, int y, int l, int w, int thick, int col,
         items_per_box = (length/font_sz);
 
         cursorx1 = xpos+2;
-        cursory1 = ypos+2;
+        cursory1 = 0; //NOTE: ***!!!!*** Since x position on cursor always stays the same, it is safe to assign on constructor
+                      //Since the y position is constantly changing, that is why we assign it to zero on constructor
+                      //But we manipulate Y values of cursor in the display_cursor_function.
         cursorx2 = sizex2-2;
-        cursory2 = font_sz;
+        cursory2 = 0;
 
         shift_start = 0;
         cursorposct = 0;
@@ -189,7 +191,7 @@ template<class Type1, class Type2>
 void BOX_LIST<Type1, Type2>::display_cursor(){
 
     cursory1 = if_neg_ret_zero((ypos+(cursorposct*font_sz)));
-    cursory2 = if_neg_ret_zero((font_sz+(cursorposct*font_sz)));
+    cursory2 = if_neg_ret_zero((ypos+2+font_sz+(cursorposct*font_sz)));
 
     rect(draw_surface, cursorx1+thickness_box+2, cursory1,  cursorx2-2, cursory2, color);
 }
