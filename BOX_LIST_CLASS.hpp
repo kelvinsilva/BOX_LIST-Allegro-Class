@@ -1,4 +1,3 @@
-
 //Kelvin Silva
 //For use with allegro version < 5
 //Makes a box with a list and a rectangle to select
@@ -34,6 +33,7 @@ It is very important that fonsz be an accurate number or else display() wont wor
 */
 
 /*
+0. Declare the object.
 1. call load_display_array. It can be any array that matches the type used in constructor.
 2. call load_value_array. ->self explanatory.
 3. call display(). It draws the box onto bitmap.
